@@ -5,7 +5,7 @@
 > *For Practice & Learning Purpose only*
 
 ## ER Diagram
-![Images](Dairy Shop Database Management\images\er_diagram.png)
+![Images](https://github.com/iamrahulkumar052/database-project/blob/main/Dairy%20Shop%20Database%20Management/images/er_diagram.png)
 
 ## Create Database
 - Create database: `dairy_shop`
