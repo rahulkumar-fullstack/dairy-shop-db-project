@@ -129,11 +129,11 @@ select cust_name,count(prod_id) as No_of_product from sales where cust_name =(se
 ```
 select  sum(prod_quantity) as no_product, sum(prod_price*prod_quantity) as Total_money_spent from purchase where prod_id = (select prod_id from product where prod_id=5);
 ```
-![Image3](https://github.com/iamrahulkumar052/database-project/blob/main/Dairy%20Shop%20Database%20Management/images/-query-3.png)
+![Image3](https://github.com/iamrahulkumar052/database-project/blob/main/Dairy%20Shop%20Database%20Management/images/sub-query-3.png)
 
 - **View Purchase Record**
 
-![Image4](https://github.com/iamrahulkumar052/database-project/blob/main/Dairy%20Shop%20Database%20Management/images/.png)
+![Image4](https://github.com/iamrahulkumar052/database-project/blob/main/Dairy%20Shop%20Database%20Management/images/purchase_record.png)
 
 - **View Sales Record**
 
