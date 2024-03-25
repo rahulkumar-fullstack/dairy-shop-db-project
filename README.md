@@ -1,5 +1,5 @@
 # Database Projects
-- Practice `SQL` through RDBMS project
+- Practice `SQL` through Practice Projects
 
 ## Table of Contens
 ||Name of Project|Language|Tool|File|
