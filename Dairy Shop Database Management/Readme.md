@@ -117,31 +117,31 @@ insert into customer(cust_name, rating) values
 ```
 select cust_name,sum(sales_price*sales_quantity) as Total_spent_money from sales where cust_name = (select cust_name from customer where cust_name = 'jack') group by cust_name;
 ```
-![Image1](Dairy Shop Database Management\images\sub-query-1.png)
+![Image1](https://github.com/iamrahulkumar052/database-project/blob/main/Dairy%20Shop%20Database%20Management/images/sub-query-1.png)
 
 - **To find how many products a single customer brought**
 ```
 select cust_name,count(prod_id) as No_of_product from sales where cust_name =(select cust_name from customer where cust_name = 'jim') group by cust_name;
 ```
-![Image2](Dairy Shop Database Management\images\sub-query-2.png)
+![Image2](https://github.com/iamrahulkumar052/database-project/blob/main/Dairy%20Shop%20Database%20Management/images/sub-query-2.png)
 
 - **To find quantity and Total money spent on a single product**
 ```
 select  sum(prod_quantity) as no_product, sum(prod_price*prod_quantity) as Total_money_spent from purchase where prod_id = (select prod_id from product where prod_id=5);
 ```
-![Image3](Dairy Shop Database Management\images\sub-query-3.png)
+![Image3](https://github.com/iamrahulkumar052/database-project/blob/main/Dairy%20Shop%20Database%20Management/images/-query-3.png)
 
 - **View Purchase Record**
 
-![Image4](Dairy Shop Database Management\images\purchase_record.png)
+![Image4](https://github.com/iamrahulkumar052/database-project/blob/main/Dairy%20Shop%20Database%20Management/images/.png)
 
 - **View Sales Record**
 
-![Image5](Dairy Shop Database Management\images\sales_record.png)
+![Image5](https://github.com/iamrahulkumar052/database-project/blob/main/Dairy%20Shop%20Database%20Management/images/sales_record.png)
 
 - **View Stock Record**
 
-![Image6](Dairy Shop Database Management\images\stock_record.png)
+![Image6](https://github.com/iamrahulkumar052/database-project/blob/main/Dairy%20Shop%20Database%20Management/images/stock_record.png)
 
 -----
 
