@@ -132,14 +132,23 @@ select  sum(prod_quantity) as no_product, sum(prod_price*prod_quantity) as Total
 ![Image3](https://github.com/iamrahulkumar052/database-project/blob/main/Dairy%20Shop%20Database%20Management/images/sub-query-3.png)
 
 - **View Purchase Record**
+```
+select purchase_id as sr_no, prod_name as Product, prod_price as Price, prod_quantity as Quantity, (prod_price*prod_quantity) as Total_price, purchase_date from purchase left join product on (purchase.prod_id = product.prod_id); 
+```
 
 ![Image4](https://github.com/iamrahulkumar052/database-project/blob/main/Dairy%20Shop%20Database%20Management/images/purchase_record.png)
 
 - **View Sales Record**
+```
+select sales_id as sr_no, prod_name as Product, sales_price as Price, sales_quantity as Quantity, (sales_price*sales_quantity) as Total_price, cust_name, sales_date from product right join sales on (sales.prod_id = product.prod_id);
+```
 
 ![Image5](https://github.com/iamrahulkumar052/database-project/blob/main/Dairy%20Shop%20Database%20Management/images/sales_record.png)
 
 - **View Stock Record**
+```
+select prod_name as Product,(sum(prod_quantity) - sum(sales_quantity)) as Available from product left join purchase on (purchase.prod_id = product.prod_id) left join sales on (purchase.prod_id = sales.prod_id)  group by prod_name;
+```
 
 ![Image6](https://github.com/iamrahulkumar052/database-project/blob/main/Dairy%20Shop%20Database%20Management/images/stock_record.png)
 
