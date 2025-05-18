@@ -1,4 +1,4 @@
-# Dairy Shop Database Management
+# Dairy Shop Database Project
 - This Project is based on Relational Database Management System **(RDBMS)**
 - Language: **`SQL`** is used
 - Tools: **MySQL Workbench**
