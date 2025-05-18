@@ -1,6 +1,3 @@
-# Database Projects
-- Practice `SQL` through Practice Projects
-
 ## Table of Contens
 ||Name of Project|Language|Tool|Docs|Source Code|
 |-:|:-:|:-:|:-:|:-:|:-:|
